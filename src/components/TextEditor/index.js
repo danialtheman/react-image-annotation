@@ -36,8 +36,8 @@ const Button = styled.div`
 
 function TextEditor (props) {
   return (
-    <React.Fragment>
-      <Inner>
+   <React.Fragment>
+      {/* <Inner>
         <textarea
           placeholder='Write description'
           onFocus={props.onFocus}
@@ -47,13 +47,9 @@ function TextEditor (props) {
         >
         </textarea>
       </Inner>
-      {props.value && (
-        <Button
-          onClick={props.onSubmit}
-        >
-          Submit
-        </Button>
-      )}
+      {props.value && ( */}
+      <Button onClick={props.onSubmit}>Submit</Button>
+      {/* ) */}
     </React.Fragment>
   )
 }
